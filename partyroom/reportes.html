@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Reportes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body onload="obtenerClientes()">
+<h1>Reportes</h1>
+<a href="index.html" class="btn btn-dark" >Volver</a>
+<a href="messages.html" class="btn btn-dark" >Ver Mensajes</a>
+<br>
+<br>
+<div class="input-group">
+    <div class="input-group-prepend">
+        <button onclick="traerReporteStatus()" class="btn btn-dark">Generar Reporte Status Reservas</button>
+        <div id="ResultStatus"></div>
+        <input type="date" id="RstarDate" placeholder="descripcion">
+        <input type="date" id="RdevolutionDate" placeholder="descripcion">
+        <button onclick="traerReporteDate()"> Generar Reporte por fecha </button>
+        <div id="resultadoDate"></div>
+        <button onclick="reporteClientes()"> Generar Reporte Clientes y Cantidad de reservas por cliente </button>
+
+</div>
+</div>
+
+
+
+<div id="ResultClient"></div>
+
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type= "text/javascript" src="js/clientes.js"></script>
+</html>
